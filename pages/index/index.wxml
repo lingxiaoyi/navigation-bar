@@ -1,4 +1,4 @@
-<navBar title-text="自定义导航栏" background="#084709" bindback="back" back="{{true}}" home="{{true}}" searchBar="{{true}}" iconTheme="white"/>
+<navBar title-text="自定义导航栏" background="#084709" back="{{true}}" home="{{true}}" searchBar="{{true}}" iconTheme="white" bindback="back" bindhome="home" bindsearch="search"/>
 <!-- <mp-navigation-bar loading="{{loading}}" show="{{show}}" animated="{{animated}}" color="{{color}}" background="{{background}}" title="" back="{{false}}" show="{{true}}">
     <view class='lxy-nav-bar-search-header' style="width:400px; height:32px;" slot="center">
         <view class='lxy-nav-bar-search' style="height:32px;">
