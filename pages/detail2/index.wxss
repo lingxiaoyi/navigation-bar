@@ -1,0 +1,8 @@
+.main {
+  height: 800px;
+  background: #d4d4d4;
+  padding-top: 100rpx;
+  font-size: 40rpx;
+  line-height: 90rpx;
+  padding: 30rpx;
+}

@@ -1,10 +1,6 @@
-<navBar title-text="自定义导航栏" background="#fff" back="{{false}}" home="{{false}}" searchBar="{{true}}" iconTheme="" bindsearch="search"></navBar>
+<navBar background="#fff" back="{{false}}" home="{{false}}" searchBar="{{true}}" iconTheme="" bindsearch="search"></navBar>
 <view class='main'>
-    <view class='p'>
-        小程序页面自定义导航栏功能已经开放有些日子了(还不知道这个功能的可以先>>了解一下)，这极大的提升了小程序开发的自由度，相信不少小伙伴已经使用过这个功能，同时也相信不少小伙伴在此功能开发过程中踩过同样的一些坑：
-    </view>
-    <view class='p'>1.机型多如牛毛：自定义导航栏高度在不同机型始终无法达到视觉上的统一；</view>
-    <view class='p'>2.调皮的胶囊按钮：导航栏元素（文字，图标等）怎么也对不齐那该死的胶囊按钮；</view>
-    <view class='p'>3.各种尺寸的全面屏，奇怪的刘海屏，简直要抓狂。</view>
-    <view class='p'>同样的，这些问题也是我经历过的。但是，办法总比问题多，于是开始了自己的探究：</view>
+    <view class='p' bindtap="search">点击跳转搜索页</view>
+    <view class='p' bindtap="jumpDetail">点击跳转详情页</view>
+    <view class='p' bindtap="jumpDetail2">点击跳转详情页2</view>
 </view>

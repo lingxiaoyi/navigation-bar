@@ -14,18 +14,13 @@ Page({
   onLoad: function() {},
   back: function(e) {
     let pages = getCurrentPages();
-    if(pages.length ===1){
+    /* this.setData({
+      show: false
+    }); */
+    if (pages.length === 1) {
       wx.navigateTo({
         url: '/pages/index/index'
-      })
+      });
     }
-  },
-  home: function(e) {
-    wx.navigateTo({
-      url: '/pages/index/index'
-    })
-  },
-  search: function(e) {
-    console.log(e.detail);
   }
 });

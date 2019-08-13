@@ -1,0 +1,4 @@
+<navBar title="详情页2" background="#084709" color="#fff" back="{{true}}" iconTheme="white" animated="{{false}}" show="{{show}}" bindback="back"></navBar>
+<view class='main'>
+    <view class='p'>详情页2</view>
+</view>
