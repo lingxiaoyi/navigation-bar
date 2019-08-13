@@ -15,6 +15,7 @@ function page(conf) {
             let cusFunc = conf[v]
             conf[v] = function(e) {
                 // 交互事件
+                console.log('e', e);
                 if (e && e.type) {
                     let dataset = e.currentTarget.dataset, //组件data-xx参数集合
                         pages = getCurrentPages(),

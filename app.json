@@ -1,5 +1,5 @@
 {
-  "pages": ["pages/index/index"],
+  "pages": ["pages/index/index","pages/search/index"],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
@@ -8,8 +8,7 @@
     "navigationStyle": "custom"
   },
   "usingComponents": {
-    "navBar": "/components/navBar/navBar",
-    "mp-navigation-bar": "/components/navigation-bar/navigation-bar"
+    "navBar": "/components/navBar/navBar"
   },
   "sitemapLocation": "sitemap.json"
 }

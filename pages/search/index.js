@@ -12,9 +12,15 @@ Page({
   },
 
   onLoad: function() {},
-  search: function(e) {
+  back: function(e) {
+    console.log(e.detail);
+  },
+  home: function(e) {
     wx.navigateTo({
-      url: '/pages/search/index'
+      url: '/pages/index/index'
     })
+  },
+  search: function(e) {
+    console.log(e.detail);
   }
 });

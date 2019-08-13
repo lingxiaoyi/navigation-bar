@@ -1,12 +1,5 @@
-<navBar title-text="自定义导航栏" background="#084709" back="{{true}}" home="{{true}}" searchBar="{{true}}" iconTheme="white" bindback="back" bindhome="home" bindsearch="search"/>
-<!-- <mp-navigation-bar loading="{{loading}}" show="{{show}}" animated="{{animated}}" color="{{color}}" background="{{background}}" title="" back="{{false}}" show="{{true}}">
-    <view class='lxy-nav-bar-search-header' style="width:400px; height:32px;" slot="center">
-        <view class='lxy-nav-bar-search' style="height:32px;">
-            <view class='lxy-nav-bar-search__icon' />
-            <view class='lxy-nav-bar-search__input'>asfsafsafsaf</view>
-        </view>
-    </view>
-</mp-navigation-bar> -->
+<navBar title-text="自定义导航栏" background="#fff" back="{{false}}" home="{{false}}" searchBar="{{true}}" iconTheme=""  bindsearch="search" >
+</navBar >
 <view class='main'>
     <view class='p'>
         小程序页面自定义导航栏功能已经开放有些日子了(还不知道这个功能的可以先>>了解一下)，这极大的提升了小程序开发的自由度，相信不少小伙伴已经使用过这个功能，同时也相信不少小伙伴在此功能开发过程中踩过同样的一些坑：

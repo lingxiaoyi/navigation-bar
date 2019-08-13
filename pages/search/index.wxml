@@ -1,0 +1,9 @@
+<navBar title-text="搜索页面" background="#fff" back="{{true}}" home="{{true}}" searchBar="{{false}}" iconTheme="" bindback="back" bindhome="home" bindsearch="search" >
+  <view slot="center" class='lxy-nav-bar-search' style="height:{{capsulePosition.height}}px;" bindtap="search">
+  </view>
+</navBar >
+<view class='main'>
+    <view class='p'>
+        搜索页面
+    </view>
+</view>

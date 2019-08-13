@@ -1,0 +1,46 @@
+.main {
+  height: 800px;
+  background: #d4d4d4;
+  padding-top: 100rpx;
+  font-size: 40rpx;
+  line-height: 70rpx;
+  padding: 30rpx;
+}
+.lxy-nav-bar-search-header {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.lxy-nav-bar-search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 32px;
+  font-size: 16px;
+  border-radius: 16px;
+  position: relative;
+  background: #f6f6f6;
+}
+.lxy-nav-bar-search__icon {
+  width: 22px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAADBklEQVRoQ+2YS3IaMRCGu7UQ7MINjE9gcgLjEyTcADZoZuXcIPYJglczYgOcINwg+ATBJwg5gZMlLNSpdiTXZMpV1mOo4KpRFQuXZ1r99d9qdQ/CG1/4xv2HFuB/K9gq0CqQGIE2hRIDmPx6IwosFovefr+/BICPANDnHyL2iWhjPVwLIe6n0+k22eOagSQAdvxwOFwDwCcA6FnbPwFgV9lnAADv+G8GIqLbPM8dWDJPNIDWmqO9sI7fG2OW3W53PZlMftW9ms/nA2PMGBHHFmYtpZy89GwoURSA1poj/gUAfgPAWCm19tnYptoSET8AwNYYM8rzvKqWj5l/ngkGKIpiLIRYENFDp9MZxkTR2WAIKeVVjA1HEQTAqUBE31OcdxtXINZKqVFw6O0LQQBaa5a7Z4wZpErP+5dlOUPEa2PMJM/zZQyEN0AlYrdKqZuYzerv2Cq2I6LHLMvOY2x6A5RluUXEnlKK63xjqxKYkW8xqG7uBVAURV8I8QMAVkopLoWNrVTbvgBPlQcAoqL0Gi2ry/dDTBp5AWitOec/I+L7Y7QDZVmu+W5QSnn5E5xCDiBmg9eiz/9Pse9FnLLBSQEYY66abMQcnNaam7vLGIV9FeDG7euxDrG9ICGmRHsB2Avn8ZhllIjusizjJjFoeQHYg8YyX0gpz1Oar7p3qRXOG6AoiqEQ4hsANN1K8AX5oJQaBoU+spl7OmxN3Qeu/qcUB28FGNi20wxBqankUic2951aQQD2LDxVJCLaCSFGMTeza6N5rsiyjGfm6BUMUIHg/p0AYCalvPM52HyOEJFbkud8T5kF2JcogEo68Sx8xmogIvczq7oitgTzDMzK8Y/XrZRytt/vN4h4kQIRDeA0t/08N3tn1TywUPXZYWWMuXHTnB3ykyCSAZzT9oBzanBOPztORDwIbaSUm5fSLBWiMYDoU8gfl/5+2YtS4iQAGD4W4mQA6hC+jeNJAVQg+Ovd0mfIPzmA0LPUAoRGrOnnWwWajmiovVaB0Ig1/XyrQNMRDbX3B3I3pUA0WyZuAAAAAElFTkSuQmCC);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.lxy-nav-bar-search__input {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  color: #999;
+  font-size: 12px;
+  line-height: 12px;
+}
