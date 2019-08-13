@@ -1,0 +1,153 @@
+view,
+text,
+scroll-view,
+input,
+button,
+image,
+cover-view {
+  box-sizing: border-box;
+}
+page {
+  --height: 44px; /* 4*2+32 */
+  --right: 97px; /* 10+87 */
+  --navBarExtendHeight: 4px;
+}
+.lxy-nav-bar .android {
+  --height: 48px; /* 8*2+32 */
+}
+.lxy-nav-bar .devtools {
+  --height: 42px; /* 5*2+32 */
+}
+.lxy-nav-bar__inner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5001;
+  height: var(--height);
+  display: flex;
+  align-items: center;
+  padding-right: var(--right);
+  width: 100%;
+  padding-bottom: var(--navBarExtendHeight);
+}
+.lxy-nav-bar__inner .lxy-nav-bar__left {
+  position: relative;
+  width: var(--right);
+  height: 32px;
+  /*  padding-left: 10px; */
+  display: flex;
+  align-items: center;
+}
+.lxy-nav-bar__buttons {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border-radius: 16px;
+  border: 1rpx solid rgba(204, 204, 204, 0.6);
+  position: relative;
+}
+.lxy-nav-bar__buttons.android {
+  border: 1rpx solid rgba(234, 234, 234, 0.6);
+}
+.lxy-nav-bar__buttons::after {
+  position: absolute;
+  content: '';
+  width: 1rpx;
+  height: 18.4px;
+  background: rgba(204, 204, 204, 0.6);
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.lxy-nav-bar__buttons.android::after {
+  background: rgba(234, 234, 234, 0.6);
+}
+.lxy-nav-bar__button {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  font-size: 12px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 1em 2em;
+}
+
+.lxy-nav-bar__inner .lxy-nav-bar__left .lxy-nav-bar__btn_goback:active {
+  opacity: 0.5;
+}
+.lxy-nav-bar__inner .lxy-nav-bar__center {
+  font-size: 17px;
+  text-align: center;
+  position: relative;
+  flex: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 10px;
+}
+.lxy-nav-bar__inner .lxy-nav-bar__loading {
+  font-size: 0;
+}
+.lxy-nav-bar__inner .lxy-nav-bar__loading .lxy-loading {
+  margin-left: 0;
+}
+.lxy-nav-bar__inner .lxy-nav-bar__right {
+  margin-right: 10px;
+}
+.lxy-nav-bar__placeholder {
+  height: var(--height);
+  background: #f8f8f8;
+  position: relative;
+  z-index: 50;
+}
+
+.lxy-nav-bar-search {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 32px;
+  border-radius: 16px;
+  position: relative;
+  background: #f6f6f6;
+}
+
+.lxy-nav-bar-search__input {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  color: #999;
+  font-size: 12px;
+  line-height: 12px;
+}
+.lxy-nav-bar__inner .lxy-nav-bar__left .lxy-nav-bar__btn_goback {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='24' viewBox='0 0 12 24'%3E  %3Cpath fill-opacity='.9' fill-rule='evenodd' d='M10 19.438L8.955 20.5l-7.666-7.79a1.02 1.02 0 0 1 0-1.42L8.955 3.5 10 4.563 2.682 12 10 19.438z'/%3E%3C/svg%3E");
+}
+.lxy-nav-bar__inner .lxy-nav-bar__left .lxy-nav-bar__btn_goback.white {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='24' viewBox='0 0 12 24'%3E  %3Cpath fill-opacity='.9' fill-rule='evenodd' d='M10 19.438L8.955 20.5l-7.666-7.79a1.02 1.02 0 0 1 0-1.42L8.955 3.5 10 4.563 2.682 12 10 19.438z' fill='%23ffffff'/%3E%3C/svg%3E");
+
+  
+}
+.lxy-nav-bar__inner .lxy-nav-bar__left .lxy-nav-bar__btn_gohome {
+  background-image: url("data:image/svg+xml,%3Csvg t='1565691470638' class='icon' viewBox='0 0 1024 1024' version='1.1' xmlns='http://www.w3.org/2000/svg' p-id='1107' width='48' height='48'%3E%3Cpath d='M953.248 521.472 532.704 72.128c-5.056-5.024-11.648-7.296-18.464-7.744l-5.152 0c-6.816 0.416-13.408 2.688-18.464 7.744L73.28 521.472c-11.616 11.648-10.912 31.168 1.6 43.68 0.192 0.192 0.416 0.256 0.608 0.416 5.568 5.984 13.28 9.76 21.888 9.76L192 575.328l0 352.736c0 9.408 4.256 17.632 10.72 23.488 5.6 6.624 13.536 10.976 22.656 10.976l191.648 0c8.768 0 16.576-3.968 22.144-10.176C446.336 946.496 451.2 937.984 451.2 928l0-9.344c-0.16-0.896-0.544-1.696-0.544-2.656L450.656 720c0-8.832 7.168-16 16-16L560 704c8.832 0 16 7.168 16 16l0 196c0 0.704-0.32 1.312-0.416 1.984L575.584 928c0 9.984 4.864 18.496 12.032 24.352 5.568 6.208 13.376 10.176 22.144 10.176l191.648 0c9.12 0 17.056-4.352 22.656-10.976 6.496-5.856 10.72-14.08 10.72-23.488L834.784 575.328l94.624 0c8.736 0 16.512-3.936 22.08-10.112 0.032-0.032 0.096-0.064 0.128-0.096C964.128 552.672 964.832 533.12 953.248 521.472zM417.376 639.328c-16.896 0-30.592 14.336-30.592 32 0 0.736 0.352 1.344 0.384 2.08l0 225.12L256 898.528 256 543.904c0-4.576-1.024-8.864-2.752-12.768-4.576-11.616-15.456-19.808-28.224-19.808l-55.68 0L494.24 158.816c15.808-15.808 19.744-15.872 34.816 0l327.712 352.544-54.976 0c-12.768 0-23.648 8.192-28.224 19.808-1.728 3.936-2.752 8.224-2.752 12.768l0 354.624-131.2 0 0-226.624c0-0.096-0.064-0.192-0.064-0.288 0-0.096 0.064-0.192 0.064-0.288 0-17.664-13.696-32-30.592-32L417.376 639.36z' p-id='1108'%3E%3C/path%3E%3C/svg%3E");
+  background-size: 22px 22px;
+}
+.lxy-nav-bar__inner .lxy-nav-bar__left .lxy-nav-bar__btn_gohome.white {
+  background-image: url("data:image/svg+xml,%3Csvg t='1565702924823' class='icon' viewBox='0 0 1024 1024' version='1.1' xmlns='http://www.w3.org/2000/svg' p-id='1585' width='48' height='48'%3E%3Cpath d='M953.248 521.472 532.704 72.128c-5.056-5.024-11.648-7.296-18.464-7.744l-5.152 0c-6.816 0.416-13.408 2.688-18.464 7.744L73.28 521.472c-11.616 11.648-10.912 31.168 1.6 43.68 0.192 0.192 0.416 0.256 0.608 0.416 5.568 5.984 13.28 9.76 21.888 9.76L192 575.328l0 352.736c0 9.408 4.256 17.632 10.72 23.488 5.6 6.624 13.536 10.976 22.656 10.976l191.648 0c8.768 0 16.576-3.968 22.144-10.176C446.336 946.496 451.2 937.984 451.2 928l0-9.344c-0.16-0.896-0.544-1.696-0.544-2.656L450.656 720c0-8.832 7.168-16 16-16L560 704c8.832 0 16 7.168 16 16l0 196c0 0.704-0.32 1.312-0.416 1.984L575.584 928c0 9.984 4.864 18.496 12.032 24.352 5.568 6.208 13.376 10.176 22.144 10.176l191.648 0c9.12 0 17.056-4.352 22.656-10.976 6.496-5.856 10.72-14.08 10.72-23.488L834.784 575.328l94.624 0c8.736 0 16.512-3.936 22.08-10.112 0.032-0.032 0.096-0.064 0.128-0.096C964.128 552.672 964.832 533.12 953.248 521.472zM417.376 639.328c-16.896 0-30.592 14.336-30.592 32 0 0.736 0.352 1.344 0.384 2.08l0 225.12L256 898.528 256 543.904c0-4.576-1.024-8.864-2.752-12.768-4.576-11.616-15.456-19.808-28.224-19.808l-55.68 0L494.24 158.816c15.808-15.808 19.744-15.872 34.816 0l327.712 352.544-54.976 0c-12.768 0-23.648 8.192-28.224 19.808-1.728 3.936-2.752 8.224-2.752 12.768l0 354.624-131.2 0 0-226.624c0-0.096-0.064-0.192-0.064-0.288 0-0.096 0.064-0.192 0.064-0.288 0-17.664-13.696-32-30.592-32L417.376 639.36z' p-id='1586' fill='%23ffffff'%3E%3C/path%3E%3C/svg%3E");
+  background-size: 22px 22px;
+}
+.lxy-nav-bar-search__icon {
+  width: 22px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("data:image/svg+xml,%3Csvg t='1565691512239' class='icon' viewBox='0 0 1024 1024' version='1.1' xmlns='http://www.w3.org/2000/svg' p-id='1240' width='48' height='48'%3E%3Cpath d='M819.2 798.254545L674.909091 653.963636c46.545455-48.872727 74.472727-114.036364 74.472727-186.181818 0-151.272727-123.345455-274.618182-274.618182-274.618182-151.272727 0-274.618182 123.345455-274.618181 274.618182 0 151.272727 123.345455 274.618182 274.618181 274.618182 65.163636 0 128-23.272727 174.545455-62.836364l144.290909 144.290909c2.327273 2.327273 6.981818 4.654545 11.636364 4.654546s9.309091-2.327273 11.636363-4.654546c6.981818-6.981818 6.981818-18.618182 2.327273-25.6zM235.054545 467.781818c0-132.654545 107.054545-239.709091 239.709091-239.709091 132.654545 0 239.709091 107.054545 239.709091 239.709091 0 132.654545-107.054545 239.709091-239.709091 239.709091-132.654545 0-239.709091-107.054545-239.709091-239.709091z' fill='%23999999' p-id='1241'%3E%3C/path%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-size: cover;
+}

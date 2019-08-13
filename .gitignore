@@ -1,0 +1,14 @@
+.DS_Store
+node_modules/
+gifs/
+npm-debug.log
+test/unit/coverage
+test/e2e/reports
+selenium-debug.log
+.idea
+package-lock.json
+.history
+.project
+
+*.zip
+*.rar
