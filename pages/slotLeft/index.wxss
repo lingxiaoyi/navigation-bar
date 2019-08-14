@@ -1,3 +1,6 @@
+.main {
+  height: 500px;
+}
 .main .p {
   color: rgb(8, 122, 216);
 }
@@ -20,6 +23,10 @@
   border-radius: 16px;
   position: relative;
   background: #f6f6f6;
+  padding-left: 10px;
+}
+.srch-ipt {
+  flex: 1;
 }
 .lxy-nav-bar-search__icon {
   width: 22px;

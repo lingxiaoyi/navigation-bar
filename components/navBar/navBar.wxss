@@ -73,7 +73,8 @@ page {
   background-size: 1em 2em;
 }
 
-.lxy-nav-bar__inner .lxy-nav-bar__left .lxy-nav-bar__btn_goback:active {
+.lxy-nav-bar__inner .lxy-nav-bar__left .lxy-nav-bar__btn_goback:active,
+.lxy-nav-bar__inner .lxy-nav-bar__left .lxy-nav-bar__btn_gohome:active {
   opacity: 0.5;
 }
 .lxy-nav-bar__inner .lxy-nav-bar__center {

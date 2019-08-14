@@ -1,4 +1,4 @@
-<navBar background="#fff" back="{{true}}" home="{{true}}" searchBar="{{true}}" iconTheme="" bindsearch="search"></navBar>
+<navBar background="#fff" back="{{false}}" home="{{false}}" searchBar="{{true}}" iconTheme="" bindsearch="search"></navBar>
 <!-- <navBar></navBar> -->
 <view class='main'>
     <view class='p' bindtap="search">例子1: 点击跳转搜索页</view>
