@@ -21,11 +21,6 @@
   position: relative;
   background: #f6f6f6;
 }
-.lxy-nav-bar-search input {
-  color: #999;
-  font-size: 12px;
-  line-height: 12px;
-}
 .lxy-nav-bar-search__icon {
   width: 22px;
   height: 22px;

@@ -12,7 +12,7 @@
 		"autoAudits": false
 	},
 	"compileType": "miniprogram",
-	"libVersion": "2.6.4",
+	"libVersion": "2.7.7",
 	"appid": "wx76fe9d97c50feaa5",
 	"projectname": "navigationBar",
 	"debugOptions": {

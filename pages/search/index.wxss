@@ -17,12 +17,14 @@
   border-radius: 16px;
   position: relative;
   background: #f6f6f6;
+  padding-left: 10px;
 }
-.lxy-nav-bar-search input {
+/* .lxy-nav-bar-search input {
   color: #999;
   font-size: 12px;
-  line-height: 12px;
-}
+  display: block;
+} */
+
 .lxy-nav-bar-search__icon {
   width: 22px;
   height: 22px;

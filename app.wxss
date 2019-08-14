@@ -17,3 +17,13 @@
   padding: 30rpx;
   text-align: center;
 }
+
+.srch-ipt {
+  height: 36px;
+  text-align: left;
+}
+.ipt-placeholder {
+  font-size: 15px;
+  color: #bebebe;
+  text-align: left;
+}

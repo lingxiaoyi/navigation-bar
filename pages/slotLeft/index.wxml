@@ -5,7 +5,7 @@
     </View>
     <view slot="center" class='lxy-nav-bar-search' style="height:{{capsulePosition.height}}px;" bindtap="search">
         <View class='icon-search' />
-        <input placeholder="搜索页面" auto-focus />
+        <input autoFocus="true" bindconfirm="confirmSearch" bindinput="search" class="srch-ipt" confirmType="search" placeholder="搜索内容" placeholderClass="ipt-placeholder" type="text" value=""></input>
     </view>
 </navBar>
 <view class='main'>
