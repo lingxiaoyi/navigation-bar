@@ -22,5 +22,10 @@ Page({
         url: '/pages/index/index'
       });
     }
-  }
+  },
+  jumpHomePage: function(e) {
+    wx.navigateTo({
+      url: '/pages/index/index'
+    })
+  },
 });

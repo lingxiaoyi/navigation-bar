@@ -1,0 +1,4 @@
+<navBar title="有返回和home" background="#fff" back="{{true}}" home="{{true}}" searchBar="{{false}}" iconTheme="" bindback="back" bindhome="home"></navBar>
+<view class='main'>
+  <view class='p'>有返回和home的页面</view>
+</view>

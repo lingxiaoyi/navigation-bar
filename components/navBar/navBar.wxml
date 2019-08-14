@@ -5,6 +5,9 @@
             <block wx:if="{{back&&!home}}">
                 <view bindtap="back" class="lxy-nav-bar__button lxy-nav-bar__btn_goback {{iconTheme}}"></view>
             </block>
+            <block wx:if="{{!back&&home}}">
+                <view bindtap="home" class="lxy-nav-bar__button lxy-nav-bar__btn_gohome {{iconTheme}}"></view>
+            </block>
             <block wx:elif="{{back&&home}}">
                 <view class="lxy-nav-bar__buttons {{ios ? 'ios' : 'android'}}" wx:if="{{home}}">
                     <view bindtap="back" class="lxy-nav-bar__button lxy-nav-bar__btn_goback {{iconTheme}}" wx:if="{{back}}"></view>
@@ -16,7 +19,10 @@
             </block>
         </view>
         <view class='lxy-nav-bar__center'>
-            <view class='lxy-nav-bar-search' style="height:{{capsulePosition.height}}px;" wx:if="{{searchBar}}" bindtap="search">
+            <block wx:if="{{title}}">
+                <text>{{title}}</text>
+            </block>
+            <view class='lxy-nav-bar-search' style="height:{{capsulePosition.height}}px;" wx:elif="{{searchBar}}" bindtap="search">
                 <view class='lxy-nav-bar-search__icon' />
                 <view class='lxy-nav-bar-search__input'>{{searchText}}</view>
             </view>
@@ -24,9 +30,6 @@
             <!-- <view wx:if="{{loading}}" class="lxy-nav-bar__loading">
                 <view class="lxy-loading" style="width:{{size.width}}rpx;height:{{size.height}}rpx;"></view>
             </view> -->
-            <block wx:elif="{{title}}">
-                <text>{{title}}</text>
-            </block>
             <block wx:else>
                 <slot name="center"></slot>
             </block>

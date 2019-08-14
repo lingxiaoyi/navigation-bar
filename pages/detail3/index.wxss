@@ -1,11 +1,3 @@
-.main {
-  padding: 0 30px;
-  text-align: left;
-  padding-top: 30px;
-}
-.main .p {
-  color: rgb(8, 122, 216);
-}
 .lxy-nav-bar-search-header {
   width: 100%;
   height: 100%;

@@ -8,3 +8,12 @@
   padding: 200rpx 0;
   box-sizing: border-box;
 }
+.main {
+  height: 800px;
+  background: #eeeeee;
+  padding-top: 100rpx;
+  font-size: 30rpx;
+  line-height: 60rpx;
+  padding: 30rpx;
+  text-align: center;
+}

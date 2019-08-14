@@ -18,7 +18,7 @@ Component({
     },
     title: {
       type: String,
-      value: '导航栏'
+      value: ''
     },
     searchText: {
       type: String,
@@ -30,7 +30,7 @@ Component({
     },
     back: {
       type: Boolean,
-      value: false
+      value: true
     },
     home: {
       type: Boolean,
@@ -40,7 +40,7 @@ Component({
       type: String,
       value: 'black'
     },
-    animated: {
+    /* animated: {
       type: Boolean,
       value: true
     },
@@ -48,7 +48,7 @@ Component({
       type: Boolean,
       value: true,
       observer: '_showChange'
-    },
+    }, */
     delta: {
       type: Number,
       value: 1
@@ -62,7 +62,7 @@ Component({
     setStyle: function() {
       this.getSystemInfo().then(res => {
         const { statusBarHeight, navBarHeight, capsulePosition, navBarExtendHeight, ios, windowWidth } = res;
-        const { back, home } = this.data;
+        const { back, home, title } = this.data;
         let rightDistance = windowWidth - capsulePosition.right; //胶囊按钮右侧到屏幕右侧的边距
         let leftWidth = windowWidth - capsulePosition.left; //胶囊按钮左侧到屏幕右侧的边距
 
@@ -75,16 +75,16 @@ Component({
           `padding-bottom:${navBarExtendHeight}px`
         ].join(';');
         let navBarLeft = [];
-        if (back && !home) {
+        if (back && !home || !back && home) {
           navBarLeft = [`width:${capsulePosition.width}px`, `height:${capsulePosition.height}px`].join(';');
-        } else if (back && home) {
+        } else if (back && home || title) {
           navBarLeft = [
             `width:${capsulePosition.width}px`,
             `height:${capsulePosition.height}px`,
             `margin-left:${rightDistance}px`
           ].join(';');
         } else {
-          navBarLeft = [`width:0px`, `margin-left:0px`].join(';');
+          navBarLeft = [`width:auto`, `margin-left:0px`].join(';');
         }
         this.setData({
           navigationbarinnerStyle,
@@ -110,7 +110,7 @@ Component({
     search: function() {
       this.triggerEvent('search', {});
     },
-    _showChange: function _showChange(show) {
+    /* _showChange: function _showChange(show) {
       var animated = this.data.animated;
       var displayStyle = '';
       if (animated) {
@@ -118,10 +118,11 @@ Component({
       } else {
         displayStyle = 'display: ' + (show ? '' : 'none');
       }
+      console.log('displayStyle', displayStyle);
       this.setData({
         displayStyle: displayStyle
       });
-    },
+    }, */
     getSystemInfo() {
       var app = getApp();
       return new Promise(resolve => {

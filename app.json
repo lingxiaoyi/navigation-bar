@@ -1,5 +1,13 @@
 {
-  "pages": ["pages/index/index", "pages/search/index", "pages/detail/index", "pages/detail2/index"],
+  "pages": [
+    "pages/index/index",
+    "pages/search/index",
+    "pages/detail/index",
+    "pages/detail2/index",
+    "pages/detail3/index",
+    "pages/detail4/index",
+    "pages/slotLeft/index"
+  ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",

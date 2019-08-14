@@ -1,12 +1,3 @@
-.main {
-  height: 800px;
-  background: #d4d4d4;
-  padding-top: 100rpx;
-  font-size: 40rpx;
-  line-height: 90rpx;
-  padding: 30rpx;
-}
-
 .lxy-nav-bar-search-header {
   width: 100%;
   height: 100%;
@@ -26,6 +17,11 @@
   border-radius: 16px;
   position: relative;
   background: #f6f6f6;
+}
+.lxy-nav-bar-search input {
+  color: #999;
+  font-size: 12px;
+  line-height: 12px;
 }
 .lxy-nav-bar-search__icon {
   width: 22px;
