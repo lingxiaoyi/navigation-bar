@@ -1,0 +1,23 @@
+{
+  "name": "wx-miniprogram-navbar",
+  "version": "1.0.0",
+  "description": "原生封装的自定义导航栏  可自定义返回事件 返回home 搜索框 自定义左中右",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "wx",
+    "miniprogram",
+    "navbar",
+    "navigation-bar",
+    "navigationbar"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lingxiaoyi/navigation-bar"
+  },
+  "author": "lxy",
+  "license": "ISC",
+  "dependencies": {}
+}

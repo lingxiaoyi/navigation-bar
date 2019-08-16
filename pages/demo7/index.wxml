@@ -1,0 +1,11 @@
+<view class='main-wraper'>
+    <navBar title='深色背景' background='#000000' color='#fff' iconTheme='white' bindback="handlerGobackClick" bindhome="handlerGohomeClick">
+        <view class='location' slot="left">
+            <view class='con'>上海</view>
+            <view class='icon' />
+        </view>
+    </navBar>
+    <view class='main'>
+        <view class='p active' bindtap="handlerGohomeClick">深色背景详情页</view>
+    </view>
+</view>

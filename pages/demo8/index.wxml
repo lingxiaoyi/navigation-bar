@@ -1,0 +1,6 @@
+<view class='main-wraper'>
+    <navBar title='自定义样式' background='#fff' back="{{true}}" home="{{true}}" bindback="handlerGobackClick" bindhome="handlerGohomeClick" extClass="lxy-navbar-extclass"></navBar>
+    <view class='main'>
+        <view class='p'>自定义样式和修改默认图标</view>
+    </view>
+</view>

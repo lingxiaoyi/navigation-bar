@@ -39,26 +39,19 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 2,
+			"current": 1,
 			"list": [
 				{
 					"id": -1,
-					"name": "pages/search/index",
-					"pathName": "pages/search/index",
+					"name": "pages/demo8/index",
+					"pathName": "pages/demo8/index",
 					"query": "",
 					"scene": null
 				},
 				{
 					"id": -1,
-					"name": "pages/detail2/index",
-					"pathName": "pages/detail2/index",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "pages/slotLeft/index",
-					"pathName": "pages/slotLeft/index",
+					"name": "pages/demo1/index",
+					"pathName": "pages/demo1/index",
 					"scene": null
 				}
 			]

@@ -1,12 +1,14 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/search/index",
-    "pages/detail/index",
-    "pages/detail2/index",
-    "pages/detail3/index",
-    "pages/detail4/index",
-    "pages/slotLeft/index"
+    "pages/demo1/index",
+    "pages/demo2/index",
+    "pages/demo3/index",
+    "pages/demo4/index",
+    "pages/demo5/index",
+    "pages/demo6/index",
+    "pages/demo7/index",
+    "pages/demo8/index"
   ],
   "window": {
     "backgroundTextStyle": "light",

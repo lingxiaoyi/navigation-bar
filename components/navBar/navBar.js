@@ -30,7 +30,7 @@ Component({
     },
     back: {
       type: Boolean,
-      value: true
+      value: false
     },
     home: {
       type: Boolean,
@@ -75,9 +75,9 @@ Component({
           `padding-bottom:${navBarExtendHeight}px`
         ].join(';');
         let navBarLeft = [];
-        if (back && !home || !back && home) {
+        if ((back && !home) || (!back && home)) {
           navBarLeft = [`width:${capsulePosition.width}px`, `height:${capsulePosition.height}px`].join(';');
-        } else if (back && home || title) {
+        } else if ((back && home) || title) {
           navBarLeft = [
             `width:${capsulePosition.width}px`,
             `height:${capsulePosition.height}px`,
@@ -98,11 +98,7 @@ Component({
     },
     // 返回事件
     back: function() {
-      let data = this.data;
-      wx.navigateBack({
-        delta: data.delta
-      });
-      this.triggerEvent('back', { delta: data.delta });
+      this.triggerEvent('back', { delta: this.data.delta });
     },
     home: function() {
       this.triggerEvent('home', {});
@@ -110,19 +106,6 @@ Component({
     search: function() {
       this.triggerEvent('search', {});
     },
-    /* _showChange: function _showChange(show) {
-      var animated = this.data.animated;
-      var displayStyle = '';
-      if (animated) {
-        displayStyle = 'opacity: ' + (show ? '1' : '0') + ';-webkit-transition:opacity 0.5s;transition:opacity 0.5s;';
-      } else {
-        displayStyle = 'display: ' + (show ? '' : 'none');
-      }
-      console.log('displayStyle', displayStyle);
-      this.setData({
-        displayStyle: displayStyle
-      });
-    }, */
     getSystemInfo() {
       var app = getApp();
       return new Promise(resolve => {

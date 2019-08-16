@@ -1,0 +1,17 @@
+<view class='main-wraper'>
+    <navBar background='#000000' color='#fff' iconTheme='white' bindback="handlerGobackClick" bindhome="handlerGohomeClick">
+        <view class='location' slot="left">
+            <view class='con'>上海</view>
+            <view class='icon' />
+        </view>
+        <view class='lxy-nav-bar-search' slot="center">
+            <view class='lxy-nav-bar-search__icon' />
+            <view class='lxy-nav-bar-search__input'>
+                <input autoFocus="true" bindconfirm="confirmSearch" bindinput="search" class="srch-ipt" confirmType="search" placeholder="搜索内容" placeholderClass="ipt-placeholder" type="text" value=""></input>
+            </view>
+        </view>
+    </navBar>
+    <view class='main'>
+        <view class='p active' bindtap="handlerGohomeClick">点击跳转自定义左侧栏目带自定义搜索框</view>
+    </view>
+</view>

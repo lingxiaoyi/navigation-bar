@@ -1,4 +1,0 @@
-<navBar title="详情页" background="#fff" back="{{true}}" iconTheme=""></navBar>
-<view class='main'>
-    <view class='p'>详情页</view>
-</view>

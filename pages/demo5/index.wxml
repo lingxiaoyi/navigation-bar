@@ -1,0 +1,6 @@
+<view class='main-wraper'>
+    <navBar title='深色背景详情页' background='#000000' color='#fff' back="{{true}}" home="{{true}}" iconTheme='white' bindback="handlerGobackClick" bindhome="handlerGohomeClick"></navBar>
+    <view class='main'>
+        <view class='p'>深色背景详情页包括返回和home按钮</view>
+    </view>
+</view>

@@ -1,10 +1,29 @@
-<navBar background="#fff" back="{{false}}" home="{{false}}" searchBar="{{true}}" iconTheme="" bindsearch="search"></navBar>
-<!-- <navBar></navBar> -->
-<view class='main'>
-    <view class='p' bindtap="search">例子1: 点击跳转搜索页</view>
-    <view class='p' bindtap="jumpDetail3">例子2: 点击跳转左侧有返回 home的详情页面</view>
-    <view class='p' bindtap="jumpDetail">例子3: 点击跳转详情页</view>
-    <view class='p' bindtap="jumpDetail2">例子4: 点击跳转详情页,深背景色,白色主题</view>
-    <view class='p' bindtap="jumpDetail4">例子5: 点击跳转,深背景色,白色主题有home</view>
-    <view class='p' bindtap="jumpslotLeft">例子6: 点击跳转自定义左侧栏目的</view>
+<view class='main-wrapper'>
+    <navBar background='#fff' searchBar="{{true}}" bindsearch='search' />
+    <view class='main'>
+        <navigator url='/pages/demo1/index'>
+            <view class='p active'>例子1: 点击跳转搜索页</view>
+        </navigator>
+        <navigator url='/pages/demo2/index'>
+            <view class='p active'>例子2: 点击跳转左侧有返回 home的详情页面</view>
+        </navigator>
+        <navigator url='/pages/demo3/index'>
+            <view class='p active'>例子3: 点击跳转详情页</view>
+        </navigator>
+        <navigator url='/pages/demo4/index'>
+            <view class='p active'>例子4: 点击跳转详情页,深背景色,白色主题</view>
+        </navigator>
+        <navigator url='/pages/demo5/index'>
+            <view class='p active'>例子5: 点击跳转,深背景色,白色主题有home</view>
+        </navigator>
+        <navigator url='/pages/demo6/index'>
+            <view class='p active'>例子6: 点击跳转自定义左侧栏目带自定义搜索框</view>
+        </navigator>
+        <navigator url='/pages/demo7/index'>
+            <view class='p active'>例子7: 点击跳转自定义左侧栏目带标题</view>
+        </navigator>
+        <navigator url='/pages/demo8/index'>
+            <view class='p active'>例子8: 修改自定义样式和图标用法</view>
+        </navigator>
+    </view>
 </view>

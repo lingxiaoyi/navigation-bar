@@ -1,0 +1,6 @@
+<view class='main-wraper'>
+    <navBar title='深色背景详情页' background='#000000' color='#fff' back="{{true}}" iconTheme='white' bindback="handlerGobackClick"></navBar>
+    <view class='main'>
+        <view class='p'>深色背景详情页</view>
+    </view>
+</view>
