@@ -1,4 +1,4 @@
-<view class="lxy-nav-bar {{extClass}}" style="background: {{background}};">
+<view class="lxy-nav-bar {{extClass}}" style="background: {{background}};height: {{navBarHeight+ navBarExtendHeight}}px;">
     <view class="lxy-nav-bar__placeholder {{ios ? 'ios' : 'android'}}" style="padding-top: {{navBarHeight+ navBarExtendHeight}}px;visibility: hidden;"></view>
     <view class="lxy-nav-bar__inner {{ios ? 'ios' : 'android'}}" style="{{navigationbarinnerStyle}}{{displayStyle}}">
         <view class='lxy-nav-bar__left' style="{{navBarLeft}}">

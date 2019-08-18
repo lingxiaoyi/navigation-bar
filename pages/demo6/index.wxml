@@ -11,7 +11,7 @@
             </view>
         </view>
     </navBar>
-    <view class='main'>
+    <view class='main' style='height:500px;'>
         <view class='p active' bindtap="handlerGohomeClick">点击跳转自定义左侧栏目带自定义搜索框</view>
     </view>
 </view>

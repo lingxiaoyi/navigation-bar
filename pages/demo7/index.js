@@ -4,7 +4,7 @@
 
 Page({
   data: {},
-  search(){
+  search() {
     wx.navigateTo({
       url: '/pages/demo/demo1'
     });
@@ -15,7 +15,7 @@ Page({
       content: '是否确认放回',
       success: e => {
         if (e.confirm) {
-          const pages = wx.getCurrentPages();
+          const pages = getCurrentPages();
           if (pages.length >= 2) {
             wx.navigateBack({
               delta: 1
