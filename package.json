@@ -1,0 +1,10 @@
+{
+  "name": "weapp-navigation-bar",
+  "version": "1.0.1",
+  "private": true,
+  "description": "自定义导航 ",
+  "scripts": {},
+  "author": "",
+  "license": "MIT",
+  "dependencies": {}
+}
