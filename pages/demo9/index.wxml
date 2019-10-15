@@ -1,0 +1,8 @@
+<view class='main-wraper'>
+    <View class='nav'>
+        <navBar title='自定义样式' background='rgba(0,0,0,0)' color='#fff' back="{{true}}" home="{{true}}" iconTheme='white' bindback="handlerGobackClick"></navBar>
+    </View>
+    <View class='main22'>
+        <View class='img'>此处为图片背景</View>
+    </View>
+</view>

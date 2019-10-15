@@ -25,5 +25,8 @@
         <navigator url='/pages/demo8/index'>
             <view class='p active'>例子8: 修改自定义样式和图标用法</view>
         </navigator>
+        <navigator url='/pages/demo9/index'>
+            <view class='p active'>例子9: 导航头部透明,不占据位置显示</view>
+        </navigator>
     </view>
 </view>
