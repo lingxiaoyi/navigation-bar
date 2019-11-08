@@ -28,5 +28,8 @@
         <navigator url='/pages/demo9/index'>
             <view class='p active'>例子9: 导航头部透明,不占据位置显示</view>
         </navigator>
+        <navigator url='/pages/demo10/index'>
+            <view class='p active'>例子10: 渐变色动态修改导航颜色</view>
+        </navigator>
     </view>
 </view>
