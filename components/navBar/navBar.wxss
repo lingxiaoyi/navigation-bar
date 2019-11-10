@@ -90,6 +90,9 @@ page {
   justify-content: center;
   padding-left: 10px;
 }
+.lxy-nav-bar__inner .lxy-nav-bar__center text {
+  margin-top: -3px;
+}
 .lxy-nav-bar__inner .lxy-nav-bar__loading {
   font-size: 0;
 }

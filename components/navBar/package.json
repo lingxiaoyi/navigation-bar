@@ -1,6 +1,6 @@
 {
   "name": "weapp-navigation-bar",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "原生封装的自定义导航栏  可自定义返回事件 返回home 搜索框 自定义左中右",
   "main": "app.js",
   "scripts": {
