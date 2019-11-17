@@ -130,7 +130,7 @@ Component({
         });
       }
     },
-    _showChange: function (value) {
+    _showChange: function(value) {
       this.setStyle();
     },
     // 返回事件
@@ -154,6 +154,10 @@ Component({
         try {
           rect = wx.getMenuButtonBoundingClientRect ? wx.getMenuButtonBoundingClientRect() : null;
           if (rect === null) {
+            throw 'getMenuButtonBoundingClientRect error';
+          }
+          //取值为0的情况
+          if (!rect.width) {
             throw 'getMenuButtonBoundingClientRect error';
           }
         } catch (error) {

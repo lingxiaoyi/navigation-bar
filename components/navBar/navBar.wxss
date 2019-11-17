@@ -11,12 +11,19 @@ page {
   --height: 44px; /* 4*2+32 */
   --right: 97px; /* 10+87 */
   --navBarExtendHeight: 4px;
+  box-sizing: border-box;
 }
 .lxy-nav-bar .android {
   --height: 48px; /* 8*2+32 */
+  --right: 96px; /* 10+87 */
+  --navBarExtendHeight: 4px;
+  box-sizing: border-box;
 }
 .lxy-nav-bar .devtools {
   --height: 42px; /* 5*2+32 */
+  --right: 88px; /* 10+87 */
+  --navBarExtendHeight: 4px;
+  box-sizing: border-box;
 }
 .lxy-nav-bar__inner {
   position: fixed;
@@ -90,7 +97,7 @@ page {
   justify-content: center;
   padding-left: 10px;
 }
-.lxy-nav-bar__inner .lxy-nav-bar__center text {
+.lxy-nav-bar__inner .lxy-nav-bar__center .lxy-nav-bar__center-title {
   margin-top: -2px;
 }
 .lxy-nav-bar__inner .lxy-nav-bar__loading {
