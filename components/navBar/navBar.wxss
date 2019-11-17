@@ -13,6 +13,12 @@ page {
   --navBarExtendHeight: 4px;
   box-sizing: border-box;
 }
+.lxy-nav-bar .ios {
+  --height: 44px; /* 4*2+32 */
+  --right: 97px; /* 10+87 */
+  --navBarExtendHeight: 4px;
+  box-sizing: border-box;
+}
 .lxy-nav-bar .android {
   --height: 48px; /* 8*2+32 */
   --right: 96px; /* 10+87 */
