@@ -156,8 +156,8 @@ Component({
           if (rect === null) {
             throw 'getMenuButtonBoundingClientRect error';
           }
-          //取值为0的情况
-          if (!rect.width) {
+          //取值为0的情况  有可能width不为0 top为0的情况
+          if (!rect.width || !rect.top || !rect.left || !rect.height) {
             throw 'getMenuButtonBoundingClientRect error';
           }
         } catch (error) {
