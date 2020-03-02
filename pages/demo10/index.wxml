@@ -1,5 +1,5 @@
 <view class='main-wraper'>
-    <navBar title='' background='{{background}}' backgroundColorTop='rgba(0,0,0,0)' back="{{true}}" home="{{true}}" bindback="handlerGobackClick" bindhome="handlerGohomeClick">
+    <navBar title='' background='{{background}}' backgroundColorTop='rgba(0,0,0,0)' back="{{true}}" home="{{true}}" bindback="handlerGobackClick" bindhome="handlerGohomeClick"  id='navBar'>
         <view class='lxy-nav-bar-search' slot="center">
             <view class='lxy-nav-bar-search__icon' />
             <view class='lxy-nav-bar-search__input'>

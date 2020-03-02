@@ -24,6 +24,13 @@ Page({
       }
     });
   },
+  onReady: function() {
+    // 页面首次渲染完毕时执行
+    let $navBar = this.selectComponent("#navBar")
+    console.log(this.selectComponent("#navBar"))
+    let navBarHeight = $navBar.data.navBarExtendHeight + $navBar.data.navBarHeight
+    console.log('navBarHeight', navBarHeight);
+  },
   onPageScroll(e) {
     let opciaty = e.scrollTop / 130;
     if (opciaty >= 1) {
