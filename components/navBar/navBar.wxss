@@ -8,27 +8,27 @@ cover-view {
   box-sizing: border-box;
 }
 page {
-  --height: 44px; /* 4*2+32 */
-  --right: 97px; /* 10+87 */
-  --navBarExtendHeight: 4px;
+  --height: 44PX; /* 4*2+32 */
+  --right: 97PX; /* 10+87 */
+  --navBarExtendHeight: 4PX;
   box-sizing: border-box;
 }
 .lxy-nav-bar .ios {
-  --height: 44px; /* 4*2+32 */
-  --right: 97px; /* 10+87 */
-  --navBarExtendHeight: 4px;
+  --height: 44PX; /* 4*2+32 */
+  --right: 97PX; /* 10+87 */
+  --navBarExtendHeight: 4PX;
   box-sizing: border-box;
 }
 .lxy-nav-bar .android {
-  --height: 48px; /* 8*2+32 */
-  --right: 96px; /* 10+87 */
-  --navBarExtendHeight: 4px;
+  --height: 48PX; /* 8*2+32 */
+  --right: 96PX; /* 10+87 */
+  --navBarExtendHeight: 4PX;
   box-sizing: border-box;
 }
 .lxy-nav-bar .devtools {
-  --height: 42px; /* 5*2+32 */
-  --right: 88px; /* 10+87 */
-  --navBarExtendHeight: 4px;
+  --height: 42PX; /* 5*2+32 */
+  --right: 88PX; /* 10+87 */
+  --navBarExtendHeight: 4PX;
   box-sizing: border-box;
 }
 .lxy-nav-bar__inner {
@@ -46,8 +46,8 @@ page {
 .lxy-nav-bar__inner .lxy-nav-bar__left {
   position: relative;
   width: var(--right);
-  height: 32px;
-  /*  padding-left: 10px; */
+  height: 32PX;
+  /*  padding-left: 10PX; */
   display: flex;
   align-items: center;
 }
@@ -56,18 +56,18 @@ page {
   width: 100%;
   display: flex;
   align-items: center;
-  border-radius: 16px;
-  border: 1rpx solid rgba(204, 204, 204, 0.6);
+  border-radius: 16PX;
+  border: 1rPX solid rgba(204, 204, 204, 0.6);
   position: relative;
 }
 .lxy-nav-bar__buttons.android {
-  border: 1rpx solid rgba(234, 234, 234, 0.6);
+  border: 1rPX solid rgba(234, 234, 234, 0.6);
 }
 .lxy-nav-bar__buttons::after {
   position: absolute;
   content: '';
-  width: 1rpx;
-  height: 18.4px;
+  width: 1rPX;
+  height: 18.4PX;
   background: rgba(204, 204, 204, 0.6);
   left: 50%;
   top: 50%;
@@ -80,7 +80,7 @@ page {
   width: 50%;
   height: 100%;
   display: flex;
-  font-size: 12px;
+  font-size: 12PX;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 1em 2em;
@@ -91,8 +91,8 @@ page {
   opacity: 0.5;
 }
 .lxy-nav-bar__inner .lxy-nav-bar__center {
-  font-size: 17px;
-  line-height: 17px;
+  font-size: 17PX;
+  line-height: 17PX;
   text-align: center;
   position: relative;
   flex: 1;
@@ -101,10 +101,10 @@ page {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-left: 10px;
+  padding-left: 10PX;
 }
 .lxy-nav-bar__inner .lxy-nav-bar__center .lxy-nav-bar__center-title {
-  margin-top: -2px;
+  margin-top: -2PX;
 }
 .lxy-nav-bar__inner .lxy-nav-bar__loading {
   font-size: 0;
@@ -113,7 +113,7 @@ page {
   margin-left: 0;
 }
 .lxy-nav-bar__inner .lxy-nav-bar__right {
-  margin-right: 10px;
+  margin-right: 10PX;
 }
 .lxy-nav-bar__placeholder {
   height: var(--height);
@@ -129,8 +129,8 @@ page {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 32px;
-  border-radius: 16px;
+  height: 32PX;
+  border-radius: 16PX;
   position: relative;
   background: #f6f6f6;
 }
@@ -140,8 +140,8 @@ page {
   display: flex;
   align-items: center;
   color: #999;
-  font-size: 15px;
-  line-height: 15px;
+  font-size: 15PX;
+  line-height: 15PX;
 }
 .lxy-nav-bar__inner .lxy-nav-bar__left .lxy-nav-bar__btn_goback {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='24' viewBox='0 0 12 24'%3E  %3Cpath fill-opacity='.9' fill-rule='evenodd' d='M10 19.438L8.955 20.5l-7.666-7.79a1.02 1.02 0 0 1 0-1.42L8.955 3.5 10 4.563 2.682 12 10 19.438z'/%3E%3C/svg%3E");
@@ -151,15 +151,15 @@ page {
 }
 .lxy-nav-bar__inner .lxy-nav-bar__left .lxy-nav-bar__btn_gohome {
   background-image: url("data:image/svg+xml,%3Csvg t='1565752242401' class='icon' viewBox='0 0 1024 1024' version='1.1' xmlns='http://www.w3.org/2000/svg' p-id='4326' width='48' height='48'%3E%3Cpath d='M931.148 451.25L591.505 97.654c-21.106-21.953-49.313-34.034-79.551-34.034-30.235 0-58.448 12.081-79.554 34.034L92.76 451.25c-35.049 36.498-30.536 68.044-24.742 81.222 4.13 9.35 18.07 35.05 58.231 35.05h49.78v272.016c0 61.756 44.342 119.906 107.357 119.906h144.587v-287.87c0-30.866-4.675-48.062 26.848-48.062h114.268c31.52 0 26.845 17.196 26.845 48.061v287.872h144.588c63.013 0 107.358-58.15 107.358-119.906V567.523h49.782c40.16 0 54.1-25.7 58.229-35.05 5.793-13.18 10.306-44.726-24.743-81.224z m-33.486 60.28h-105.77v328.007c0 30.865-19.877 63.917-51.37 63.917h-88.6V671.572c0-61.761-19.79-104.05-82.832-104.05H454.821c-63.045 0-82.836 42.289-82.836 104.05v231.883h-88.599c-31.495 0-51.37-33.052-51.37-63.917V511.529H126.25c-0.984 0-1.888-3.852-2.708-3.907 1.94-3.388 5.276-11.975 10.825-17.743l339.671-353.35c10.142-10.578 24.467-17.057 38.353-16.924 13.888-0.133 27.342 6.346 37.483 16.923L889.54 489.88c5.549 5.768 8.885 14.355 10.825 17.743-0.818 0.055-1.72 3.907-2.704 3.907z' fill='%23000000' p-id='4327'%3E%3C/path%3E%3C/svg%3E");
-  background-size: 22px 22px;
+  background-size: 22PX 22PX;
 }
 .lxy-nav-bar__inner .lxy-nav-bar__left .lxy-nav-bar__btn_gohome.white {
   background-image: url("data:image/svg+xml,%3Csvg t='1565752242401' class='icon' viewBox='0 0 1024 1024' version='1.1' xmlns='http://www.w3.org/2000/svg' p-id='4326' width='48' height='48'%3E%3Cpath d='M931.148 451.25L591.505 97.654c-21.106-21.953-49.313-34.034-79.551-34.034-30.235 0-58.448 12.081-79.554 34.034L92.76 451.25c-35.049 36.498-30.536 68.044-24.742 81.222 4.13 9.35 18.07 35.05 58.231 35.05h49.78v272.016c0 61.756 44.342 119.906 107.357 119.906h144.587v-287.87c0-30.866-4.675-48.062 26.848-48.062h114.268c31.52 0 26.845 17.196 26.845 48.061v287.872h144.588c63.013 0 107.358-58.15 107.358-119.906V567.523h49.782c40.16 0 54.1-25.7 58.229-35.05 5.793-13.18 10.306-44.726-24.743-81.224z m-33.486 60.28h-105.77v328.007c0 30.865-19.877 63.917-51.37 63.917h-88.6V671.572c0-61.761-19.79-104.05-82.832-104.05H454.821c-63.045 0-82.836 42.289-82.836 104.05v231.883h-88.599c-31.495 0-51.37-33.052-51.37-63.917V511.529H126.25c-0.984 0-1.888-3.852-2.708-3.907 1.94-3.388 5.276-11.975 10.825-17.743l339.671-353.35c10.142-10.578 24.467-17.057 38.353-16.924 13.888-0.133 27.342 6.346 37.483 16.923L889.54 489.88c5.549 5.768 8.885 14.355 10.825 17.743-0.818 0.055-1.72 3.907-2.704 3.907z' fill='%23ffffff' p-id='4327'%3E%3C/path%3E%3C/svg%3E");
-  background-size: 22px 22px;
+  background-size: 22PX 22PX;
 }
 .lxy-nav-bar-search__icon {
-  width: 22px;
-  height: 22px;
+  width: 22PX;
+  height: 22PX;
   display: flex;
   align-items: center;
   justify-content: center;
