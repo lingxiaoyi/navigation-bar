@@ -60,6 +60,10 @@ Component({
       value: 1
     }
   },
+  // 当用户从独立分包页面启动小程序时，主包不存在，App也不存在，此时调用 getApp() 获取到的是 undefined。
+  _getApp: function () {
+    return getApp() || getApp({ allowDefault: true })
+  },
   created: function() {
     this.getSystemInfo();
   },
@@ -69,7 +73,7 @@ Component({
   data: {},
   pageLifetimes: {
     show: function() {
-      if (getApp().globalSystemInfo.ios) {
+      if (this._getApp().globalSystemInfo.ios) {
         this.getSystemInfo();
         this.setStyle(); //设置样式1
       }
@@ -85,7 +89,7 @@ Component({
         navBarExtendHeight,
         ios,
         windowWidth
-      } = getApp().globalSystemInfo;
+      } = this._getApp().globalSystemInfo;
       const { back, home, title } = this.data;
       let rightDistance = windowWidth - capsulePosition.right; //胶囊按钮右侧到屏幕右侧的边距
       let leftWidth = windowWidth - capsulePosition.left; //胶囊按钮左侧到屏幕右侧的边距
@@ -144,7 +148,7 @@ Component({
       this.triggerEvent('search', {});
     },
     getSystemInfo() {
-      var app = getApp();
+      var app = this._getApp();
       if (app.globalSystemInfo && !app.globalSystemInfo.ios) {
         return app.globalSystemInfo;
       } else {
