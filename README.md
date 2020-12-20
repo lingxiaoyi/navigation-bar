@@ -6,23 +6,88 @@
 
 Navigation 是小程序的顶部导航组件，当页面配置 navigationStyle 设置为 custom 的时候可以使用此组件替代原生导航栏
 
-## 引入组件
-
-在 page.json 中引入组件
-
+## 使用教程
+> 代码细节可以参考各个 Demo
+1. 在页面 json 或 app.json（在 app.json 添加则适用所有页面），添加代码："navigationStyle": "custom"，这样顶部原来的导航就消失了，就可以自己创建导航，示例代码：
 ```bash
 {
+  "navigationStyle": "custom"
+}
+```
+
+2. 创建自定义导航组件，参考网址：https://github.com/lingxiaoyi/navigation-bar，克隆或下载下来
+，将 components 文件夹下 navBar 复制到自己小程序里的 components 文件夹下，如果导航上的返回和主页图片不想用本教程的，请看下面的 Demo8 替换默认图标的教程，您可能需要参考的目录结构：
+```
+  -- miniprogram
+     -- components
+        -- navBar
+     -- images
+     -- pages
+```
+
+3. 页面 json 或 app.json（在 app.json 添加则适用所有页面） 引入组件代码，"usingComponents": {"navBar": "/components/navBar/navBar"}，引入后在 wxml 页面即可使用 nvaBar 组件，就类似使用官方的 button 组件一样。
+```bash
+{
+  "navigationStyle": "custom",
   "usingComponents": {
     "navBar": "/components/navBar/navBar"
   }
 }
 ```
 
-## 示例代码
-
+4. wxml 页面使用 navBar，示例代码：
 ```bash
 <!--WXML示例代码-->
  <navBar title='有返回和home' background='#fff' back="{{true}}" home="{{true}}" bindback="handlerGobackClick" bindhome="handlerGohomeClick"></navBar>
+```
+
+> title 是导航中间的文字，background 是导航的背景，back是是否显示返回图标(true显示，false不显示)，home是是否显示主页图标(true显示，false不显示)，bindback是点击返回时执行的函数，bindhome 是点击返回主页的函数，函数在页面 js 文件下写，可以参考 Demo，还可以再加组件属性：iconTheme='white'，但是注意响应的页面 json 也要同时添加代码："navigationBarTextStyle": "white"，实现自定义组件图标颜色为白色，如果改为black就为黑色
+
+### Demo8 替换默认图标示例
+> 原图标在navBar.wxss里
+```
+/* wxss 修改默认的图标 */
+/* 使用帮助 */
+/*
+* 1. 找到svg图标，我这里是用的：https://www.iconfont.cn/，复制svg
+* 2. 编码我这里用：http://www.jsons.cn/urlencode/，点UrlEncode编码
+* 3. 复制编码结果
+* 4. 粘贴在data:image/svg+xml,后面,如background-image: url("data:image/svg+xml,xxxx")中的xxxx是粘贴的内容;
+* 5. 在wxml navBar还需要加一个属性：extClass="lxy-navbar-extclass"：其它属性这里省略如<navBar extClass="lxy-navbar-extclass"></navBar>
+*/
+/* black样式时返回图标 */
+.lxy-navbar-extclass .lxy-nav-bar__inner .lxy-nav-bar__left .lxy-nav-bar__btn_goback {
+  background-image: url("data:image/svg+xml,%3Csvg t='1565943723828' class='icon' viewBox='0 0 1024 1024' version='1.1' xmlns='http://www.w3.org/2000/svg' p-id='3607' width='48' height='48'%3E%3Cpath d='M861.7 447.5c-14.9-35-36.1-66.4-63.1-93.4-38.2-38.3-85.4-64.9-139-78.3-23.9-6-48.6-8.1-73.3-8.1H336.8v-83.3c0-12.1-14.1-18.8-23.5-11.2l-162 131.3c-13.7 11.1-13.7 32 0 43.1L313.4 479c9.4 7.6 23.5 0.9 23.5-11.2v-83.3h245.3c92.6 0 175.8 67.3 185.1 159.4 10.7 105.8-73 195.8-176.7 195.8h-337c-32.3 0-58.4 26.2-58.4 58.4 0 32.3 26.2 58.4 58.4 58.4h332.8c24.6 0 49.4-2.1 73.3-8.1 53.6-13.4 100.7-40.1 139-78.3 27-27 48.2-58.4 63.1-93.4 15.5-36.4 23.3-75 23.3-114.7-0.1-39.5-8-78.1-23.4-114.5z m0 0' fill='%23000000' p-id='3608'%3E%3C/path%3E%3C/svg%3E");
+  background-size: 22px 22px;
+}
+/* white样式时返回图标*/
+.lxy-navbar-extclass .lxy-nav-bar__inner .lxy-nav-bar__left .lxy-nav-bar__btn_goback.white {
+  background-image: url("data:image/svg+xml,%3Csvg t='1565943723828' class='icon' viewBox='0 0 1024 1024' version='1.1' xmlns='http://www.w3.org/2000/svg' p-id='3607' width='48' height='48'%3E%3Cpath d='M861.7 447.5c-14.9-35-36.1-66.4-63.1-93.4-38.2-38.3-85.4-64.9-139-78.3-23.9-6-48.6-8.1-73.3-8.1H336.8v-83.3c0-12.1-14.1-18.8-23.5-11.2l-162 131.3c-13.7 11.1-13.7 32 0 43.1L313.4 479c9.4 7.6 23.5 0.9 23.5-11.2v-83.3h245.3c92.6 0 175.8 67.3 185.1 159.4 10.7 105.8-73 195.8-176.7 195.8h-337c-32.3 0-58.4 26.2-58.4 58.4 0 32.3 26.2 58.4 58.4 58.4h332.8c24.6 0 49.4-2.1 73.3-8.1 53.6-13.4 100.7-40.1 139-78.3 27-27 48.2-58.4 63.1-93.4 15.5-36.4 23.3-75 23.3-114.7-0.1-39.5-8-78.1-23.4-114.5z m0 0' fill='%23000000' p-id='3608'%3E%3C/path%3E%3C/svg%3E");
+  background-size: 22px 22px;
+}
+/* home 的类似，篇幅限制就不刷屏了，复制上面的代码，把goback 改为gohome 即可*/
+```
+
+### Demo9 透明示例
+1. 透明：
+ 1.1 wxml 页面将 navBar 这个自定义组件放在一个 view 里:<view class="nav"><navBar></navBar></view>，记得在样式文件 wxss 里将 nav 高要设置为 0，代码：.nav{height:0;}
+ 1.2 wxml 页面的 navBar 要加属性：background='rgba(0,0,0,0)'
+
+2. 示例 wxml 代码 
+  ```
+  <!--WXML示例代码-->
+  <view class='nav'>
+    <navBar title='标题' background='rgba(0,0,0,0)' color='#fff' back="{{true}}" home="{{true}}" iconTheme='white'
+      bindback="handlerGobackClick"></navBar>
+  </view>
+  ```
+3. 示例 wxss 代码
+```
+/* wxss 示例代码 */
+/* 实现导航透明 */
+ .nav{
+   height:0;
+ }
 ```
 
 ## 属性列表
