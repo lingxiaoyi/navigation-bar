@@ -6,23 +6,61 @@
 
 Navigation 是小程序的顶部导航组件，当页面配置 navigationStyle 设置为 custom 的时候可以使用此组件替代原生导航栏
 
-## 引入组件
-
-在 page.json 中引入组件
-
+## 使用教程
+> 代码细节可以参考各个 Demo
+1. 在页面 json 或 app.json（在 app.json 添加则适用所有页面），添加代码："navigationStyle": "custom"，这样顶部原来的导航就消失了，就可以自己创建导航，示例代码：
 ```bash
 {
+  "navigationStyle": "custom"
+}
+```
+
+2. 创建自定义导航组件，参考网址：https://github.com/lingxiaoyi/navigation-bar，克隆或下载下来
+，将 components 文件夹下 navBar 复制到自己小程序里的 components 文件夹下，如果导航上的返回和主页图片也想用本教程的，也请注意复制过去，您可能需要参考的目录结构：
+```
+  -- miniprogram
+     -- components
+        -- navBar
+     -- images
+     -- pages
+```
+
+3. 页面 json 或 app.json（在 app.json 添加则适用所有页面） 引入组件代码，"usingComponents": {"navBar": "/components/navBar/navBar"}，引入后在 wxml 页面即可使用 nvaBar 组件，就类似使用官方的 button 组件一样。
+```bash
+{
+  "navigationStyle": "custom",
   "usingComponents": {
     "navBar": "/components/navBar/navBar"
   }
 }
 ```
 
-## 示例代码
-
+4. wxml 页面使用 navBar，示例代码：
 ```bash
 <!--WXML示例代码-->
  <navBar title='有返回和home' background='#fff' back="{{true}}" home="{{true}}" bindback="handlerGobackClick" bindhome="handlerGohomeClick"></navBar>
+```
+
+> title 是导航中间的文字，background 是导航的背景，back是是否显示返回图标，home是是否显示主页图标，bindback是点击返回时执行的函数，bindhome 是点击返回主页的函数，函数在页面 js 文件下写，可以参考 Demo，还可以再加组件属性：iconTheme='white'，但是注意响应的页面 json 也要同时添加代码："navigationBarTextStyle": "white"，实现自定义组件图标颜色为白色，如果改为black就为黑色
+
+### Demo9 透明示例
+1. 透明：wxml 页面将 navBar 这个自定义组件放在一个 view 里:<view class="nav"><navBar></navBar></view>，记得在样式文件 wxss 里将 nav 高要设置为 0，代码：.nav{height:0;}
+
+2. 示例 wxml 代码 
+  ```
+  <!--WXML示例代码-->
+  <view class='nav'>
+    <navBar title='标题' background='rgba(0,0,0,0)' color='#fff' back="{{true}}" home="{{true}}" iconTheme='white'
+      bindback="handlerGobackClick"></navBar>
+  </view>
+  ```
+3. 示例 wxss 代码
+```
+/* wxss 示例代码 */
+/* 实现导航透明 */
+ .nav{
+   height:0;
+ }
 ```
 
 ## 属性列表
